@@ -58,14 +58,9 @@ export function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center group">
-            <div className="flex flex-col leading-tight">
-              <span className="text-lg md:text-xl font-bold font-headline tracking-tight uppercase group-hover:text-primary transition-colors">
-                SMK Wikrama
-              </span>
-              <span className="text-xs md:text-sm font-semibold tracking-[0.2em] text-muted-foreground uppercase">
-                Bogor
-              </span>
-            </div>
+            <span className="text-xl md:text-2xl font-bold font-headline tracking-tight uppercase group-hover:text-primary transition-colors">
+              Tugas Sejarah
+            </span>
           </Link>
         </div>
 
