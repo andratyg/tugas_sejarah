@@ -43,10 +43,10 @@ export function Navbar() {
   };
 
   const navItems = [
-    { name: 'Home', href: '#' },
-    { name: 'Materi', href: '#materi' },
-    { name: 'Tentang', href: '#tentang' },
-    { name: 'Kontak', href: '#kontak' },
+    { name: 'Home', href: '/' },
+    { name: 'Materi', href: '/#materi' },
+    { name: 'Tentang', href: '/about' },
+    { name: 'Kontak', href: '/contact' },
   ];
 
   return (
