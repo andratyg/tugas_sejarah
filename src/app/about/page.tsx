@@ -17,11 +17,11 @@ export default function AboutPage() {
       <main className="flex-grow pt-32 pb-24">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-8 text-primary">Tentang IlmuNesia</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-8 text-primary">Tentang Platform Kami</h1>
             
             <div className="prose dark:prose-invert max-w-none space-y-6 text-muted-foreground leading-relaxed">
               <p className="text-lg">
-                IlmuNesia adalah platform edukasi modern yang berdedikasi untuk mendemokratisasi akses pembelajaran berkualitas bagi seluruh masyarakat Indonesia. Kami percaya bahwa setiap individu memiliki potensi besar jika diberikan alat dan bimbingan yang tepat.
+                Kami adalah platform edukasi modern yang berdedikasi untuk mendemokratisasi akses pembelajaran berkualitas bagi seluruh masyarakat Indonesia. Kami percaya bahwa setiap individu memiliki potensi besar jika diberikan alat dan bimbingan yang tepat.
               </p>
               
               <h2 className="text-2xl font-bold text-foreground mt-12 mb-4">Misi Kami</h2>
@@ -30,7 +30,7 @@ export default function AboutPage() {
               </p>
 
               <div className="bg-primary/5 p-8 rounded-3xl border border-primary/20 my-12">
-                <h3 className="text-xl font-bold text-primary mb-6">Mengapa Belajar di IlmuNesia?</h3>
+                <h3 className="text-xl font-bold text-primary mb-6">Mengapa Belajar di Sini?</h3>
                 <ul className="space-y-4">
                   {points.map((point, i) => (
                     <li key={i} className="flex items-start gap-3">
