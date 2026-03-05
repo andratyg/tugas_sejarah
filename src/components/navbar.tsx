@@ -66,6 +66,7 @@ export function Navbar() {
                 fill
                 className="object-contain"
                 priority
+                unoptimized
               />
             </div>
             <div className="flex flex-col">
