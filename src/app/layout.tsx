@@ -4,6 +4,11 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'SMK Wikrama Bogor',
   description: 'Platform pembelajaran interaktif SMK Wikrama Bogor.',
+  icons: {
+    icon: 'https://upload.wikimedia.org/wikipedia/id/a/a2/Logo_Wikrama.png',
+    shortcut: 'https://upload.wikimedia.org/wikipedia/id/a/a2/Logo_Wikrama.png',
+    apple: 'https://upload.wikimedia.org/wikipedia/id/a/a2/Logo_Wikrama.png',
+  },
 };
 
 export default function RootLayout({
