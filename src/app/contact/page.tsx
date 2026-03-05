@@ -1,38 +1,39 @@
 
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
-import { Mail, Instagram, Linkedin, MessageCircle } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Mail, Instagram, Linkedin, Music, User } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
 
 export default function ContactPage() {
-  const contacts = [
+  const team = [
     {
-      platform: "Email",
-      value: "halo@ilmunesia.com",
-      link: "mailto:halo@ilmunesia.com",
-      icon: <Mail className="h-6 w-6" />,
-      color: "bg-blue-500/10 text-blue-600"
+      name: "Andi Saputra",
+      role: "Lead Developer",
+      email: "andi@ilmunesia.com",
+      instagram: "andi_saputra",
+      tiktok: "andi.dev",
+      linkedin: "andisaputra",
+      avatarSeed: "andi"
     },
     {
-      platform: "Instagram",
-      value: "@ilmunesia_edu",
-      link: "https://instagram.com",
-      icon: <Instagram className="h-6 w-6" />,
-      color: "bg-pink-500/10 text-pink-600"
+      name: "Siti Aminah",
+      role: "UI/UX Designer",
+      email: "siti@ilmunesia.com",
+      instagram: "siti_design",
+      tiktok: "siti.creative",
+      linkedin: "sitiaminah",
+      avatarSeed: "siti"
     },
     {
-      platform: "TikTok",
-      value: "ilmunesia.official",
-      link: "https://tiktok.com",
-      icon: <MessageCircle className="h-6 w-6" />, // No TikTok icon in lucide-react, using MessageCircle
-      color: "bg-slate-900/10 text-slate-900 dark:bg-white/10 dark:text-white"
-    },
-    {
-      platform: "LinkedIn",
-      value: "IlmuNesia Indonesia",
-      link: "https://linkedin.com",
-      icon: <Linkedin className="h-6 w-6" />,
-      color: "bg-blue-700/10 text-blue-700"
+      name: "Budi Pratama",
+      role: "Content Specialist",
+      email: "budi@ilmunesia.com",
+      instagram: "budi_pratama",
+      tiktok: "budi.edutok",
+      linkedin: "budipratama",
+      avatarSeed: "budi"
     }
   ];
 
@@ -42,42 +43,65 @@ export default function ContactPage() {
       <main className="flex-grow pt-32 pb-24">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4 text-primary">Hubungi Kami</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4 text-primary">Hubungi Tim Kami</h1>
             <p className="text-lg text-muted-foreground">
-              Punya pertanyaan atau ingin berkolaborasi? Kami siap mendengarkan Anda.
+              Kenali lebih dekat orang-orang di balik IlmuNesia. Jangan ragu untuk menyapa kami!
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            {contacts.map((contact, i) => (
-              <a 
-                key={i} 
-                href={contact.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group"
-              >
-                <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all duration-300 rounded-3xl overflow-hidden bg-card">
-                  <CardContent className="p-8 flex items-center gap-6">
-                    <div className={`p-4 rounded-2xl ${contact.color} transition-transform group-hover:scale-110`}>
-                      {contact.icon}
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg">{contact.platform}</h3>
-                      <p className="text-muted-foreground">{contact.value}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </a>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {team.map((member, i) => (
+              <Card key={i} className="border-none shadow-xl rounded-[2.5rem] bg-card overflow-hidden hover:shadow-2xl transition-all duration-300">
+                <CardHeader className="text-center pt-10 pb-4">
+                  <div className="flex justify-center mb-4">
+                    <Avatar className="h-24 w-24 border-4 border-primary/10">
+                      <AvatarImage src={`https://picsum.photos/seed/${member.avatarSeed}/200/200`} alt={member.name} />
+                      <AvatarFallback><User /></AvatarFallback>
+                    </Avatar>
+                  </div>
+                  <CardTitle className="text-xl font-bold font-headline">{member.name}</CardTitle>
+                  <p className="text-sm text-primary font-medium">{member.role}</p>
+                </CardHeader>
+                <CardContent className="px-6 pb-10">
+                  <div className="space-y-3">
+                    <Button variant="ghost" className="w-full justify-start gap-3 rounded-xl hover:bg-primary/5 hover:text-primary transition-colors h-12" asChild>
+                      <a href={`mailto:${member.email}`}>
+                        <Mail className="h-4 w-4" />
+                        <span className="text-xs truncate">{member.email}</span>
+                      </a>
+                    </Button>
+                    <Button variant="ghost" className="w-full justify-start gap-3 rounded-xl hover:bg-pink-500/5 hover:text-pink-600 transition-colors h-12" asChild>
+                      <a href={`https://instagram.com/${member.instagram}`} target="_blank" rel="noopener noreferrer">
+                        <Instagram className="h-4 w-4" />
+                        <span className="text-xs">@{member.instagram}</span>
+                      </a>
+                    </Button>
+                    <Button variant="ghost" className="w-full justify-start gap-3 rounded-xl hover:bg-slate-900/5 dark:hover:bg-white/5 transition-colors h-12" asChild>
+                      <a href={`https://tiktok.com/@${member.tiktok}`} target="_blank" rel="noopener noreferrer">
+                        <Music className="h-4 w-4" />
+                        <span className="text-xs">@{member.tiktok}</span>
+                      </a>
+                    </Button>
+                    <Button variant="ghost" className="w-full justify-start gap-3 rounded-xl hover:bg-blue-600/5 hover:text-blue-600 transition-colors h-12" asChild>
+                      <a href={`https://linkedin.com/in/${member.linkedin}`} target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="h-4 w-4" />
+                        <span className="text-xs">{member.name}</span>
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
 
-          <div className="mt-20 text-center bg-muted/30 p-12 rounded-[3rem] max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Informasi Tim</h2>
-            <p className="text-muted-foreground mb-2">Admin Utama: <span className="text-foreground font-semibold">Tim IlmuNesia</span></p>
-            <p className="text-muted-foreground leading-relaxed">
-              Tim kami berbasis di Jakarta, Indonesia, dan bekerja secara remote untuk menjangkau setiap sudut nusantara melalui pendidikan digital.
+          <div className="mt-20 text-center bg-muted/30 p-12 rounded-[3rem] max-w-2xl mx-auto border border-border/50">
+            <h2 className="text-2xl font-bold mb-4">Butuh Bantuan Cepat?</h2>
+            <p className="text-muted-foreground mb-6">
+              Untuk pertanyaan umum atau kerjasama platform, silakan kirimkan pesan ke email resmi kami.
             </p>
+            <Button className="rounded-full px-8 h-12 font-bold" asChild>
+              <a href="mailto:halo@ilmunesia.com">Email Resmi: halo@ilmunesia.com</a>
+            </Button>
           </div>
         </div>
       </main>
