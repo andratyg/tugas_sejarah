@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Sparkles, Loader2, CheckCircle2 } from 'lucide-react';
 import {
@@ -34,6 +34,12 @@ interface MaterialModalProps {
 export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps) {
   const [summary, setSummary] = useState<string | null>(null);
   const [isLoadingSummary, setIsLoadingSummary] = useState(false);
+
+  // Reset state when material changes or modal is closed
+  useEffect(() => {
+    setSummary(null);
+    setIsLoadingSummary(false);
+  }, [material?.id, isOpen]);
 
   if (!material) return null;
 
