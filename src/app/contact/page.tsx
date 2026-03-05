@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 export default function ContactPage() {
   const team = [
     {
-      name: "Nara Andra Tyaga",
+      name: "Nara Andra T.",
       id: "12511245",
       role: "Lead Strategist",
       email: "nara@ilmunesia.com",
