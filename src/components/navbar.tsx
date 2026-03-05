@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useScrollDirection } from '@/hooks/use-scroll-direction';
 import { cn } from '@/lib/utils';
@@ -58,7 +59,21 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
-          {/* Logo and Brand area completely removed */}
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative h-10 w-10 transition-transform duration-300 group-hover:scale-110">
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/id/a/a2/Logo_Wikrama.png"
+                alt="Logo SMK Wikrama"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm font-bold leading-none tracking-tight">SMK WIKRAMA</span>
+              <span className="text-[10px] text-muted-foreground font-medium">BOGOR</span>
+            </div>
+          </Link>
         </div>
 
         {/* Desktop Menu */}
