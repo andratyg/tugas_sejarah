@@ -2,7 +2,6 @@
 "use client";
 
 import Link from 'next/link';
-import { Github, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -18,18 +17,18 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="flex space-x-6">
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Twitter className="h-5 w-5" />
+          <div className="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-2">
+            <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Twitter
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Instagram className="h-5 w-5" />
+            <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Instagram
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Github className="h-5 w-5" />
+            <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Github
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin className="h-5 w-5" />
+            <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              LinkedIn
             </Link>
           </div>
         </div>
