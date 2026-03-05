@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: 'Platform pembelajaran interaktif.',
   icons: {
     icon: [
-      { url: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==?v=99999', type: 'image/png' },
+      { url: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAA0m89NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADUlEQVQ4y2NgGAWjYfACAAAgAAH3/0zIAAAAAElFTkSuQmCC', type: 'image/png' },
     ],
-    shortcut: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==?v=99999',
-    apple: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==?v=99999',
+    shortcut: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAA0m89NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADUlEQVQ4y2NgGAWjYfACAAAgAAH3/0zIAAAAAElFTkSuQmCC',
+    apple: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAA0m89NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADUlEQVQ4y2NgGAWjYfACAAAgAAH3/0zIAAAAAElFTkSuQmCC',
   },
 };
 
@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
-        {/* Forcefully override and clear browser favicon cache with a transparent PNG and high versioning */}
-        <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==?v=99999" sizes="any" />
-        <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==?v=99999" />
-        <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==?v=99999" />
+        {/* Forcefully override and clear browser favicon cache with a 16x16 transparent PNG */}
+        <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAA0m89NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADUlEQVQ4y2NgGAWjYfACAAAgAAH3/0zIAAAAAElFTkSuQmCC" sizes="16x16" />
+        <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAA0m89NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADUlEQVQ4y2NgGAWjYfACAAAgAAH3/0zIAAAAAElFTkSuQmCC" />
+        <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAA0m89NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAADUlEQVQ4y2NgGAWjYfACAAAgAAH3/0zIAAAAAElFTkSuQmCC" />
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
