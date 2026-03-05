@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -71,7 +70,7 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-sm font-bold leading-none tracking-tight">SMK WIKRAMA</span>
-              <span className="text-[10px] text-muted-foreground font-medium">BOGOR</span>
+              <span className="text-[10px] text-muted-foreground font-medium uppercase">Bogor</span>
             </div>
           </Link>
         </div>
