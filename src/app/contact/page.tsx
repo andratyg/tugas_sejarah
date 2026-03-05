@@ -21,6 +21,7 @@ export default function ContactPage() {
   const team = [
     {
       name: "Nara Andra Tyaga",
+      id: "12511245",
       role: "Lead Strategist",
       email: "nara@ilmunesia.com",
       instagram: "nara_andra",
@@ -71,6 +72,9 @@ export default function ContactPage() {
                     </Avatar>
                   </div>
                   <CardTitle className="text-xl font-bold font-headline">{member.name}</CardTitle>
+                  {member.id && (
+                    <p className="text-xs text-muted-foreground font-mono mt-1 mb-1 tracking-wider">{member.id}</p>
+                  )}
                   <p className="text-sm text-primary font-medium">{member.role}</p>
                 </CardHeader>
                 <CardContent className="px-6 pb-10">
