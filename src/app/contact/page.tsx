@@ -24,7 +24,7 @@ export default function ContactPage() {
       id: "12511245",
       role: "Lead Strategist",
       email: "nara@ilmunesia.com",
-      instagram: "nara_andra",
+      instagram: "andra_tyg",
       tiktok: "nara.tyaga",
       linkedin: "naratyaga",
       avatarSeed: "nara"
