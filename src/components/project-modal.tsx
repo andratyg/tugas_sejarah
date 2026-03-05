@@ -31,9 +31,9 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl h-[85vh] p-0 border-none rounded-3xl overflow-hidden">
-        {/* Scrollable Container */}
-        <div className="h-full overflow-y-auto">
+      <DialogContent className="max-w-2xl h-[85vh] p-0 border-none rounded-3xl overflow-hidden bg-background">
+        {/* Scrollable Container with hidden scrollbar */}
+        <div className="h-full overflow-y-auto no-scrollbar">
           <div className="relative h-56 w-full">
             <Image
               src={project.image}
@@ -41,10 +41,11 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
               fill
               className="object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
           </div>
 
           <div className="p-8">
-            <DialogHeader className="mb-8">
+            <DialogHeader className="mb-8 text-left">
               <DialogTitle className="text-3xl font-bold font-headline">{project.title}</DialogTitle>
             </DialogHeader>
 

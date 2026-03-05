@@ -51,9 +51,9 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-3xl h-[90vh] p-0 border-none rounded-[2rem] overflow-hidden gap-0">
-        {/* Scrollable Container - Tombol X di dialog.tsx akan tetap fixed di atas container ini */}
-        <div className="h-full overflow-y-auto">
+      <DialogContent className="max-w-3xl h-[90vh] p-0 border-none rounded-[2rem] overflow-hidden gap-0 bg-background">
+        {/* Scrollable Container with hidden scrollbar */}
+        <div className="h-full overflow-y-auto no-scrollbar">
           <div className="relative h-64 md:h-80 w-full shrink-0">
             <Image
               src={material.image}
@@ -66,7 +66,7 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
           </div>
 
           <div className="p-6 md:p-10 -mt-12 relative z-10 bg-background rounded-t-[2.5rem]">
-            <DialogHeader className="mb-8">
+            <DialogHeader className="mb-8 text-left">
               <DialogTitle className="text-3xl md:text-4xl font-bold font-headline mb-2 leading-tight">{material.title}</DialogTitle>
               <DialogDescription className="text-lg text-primary font-medium">
                 {material.description}
@@ -81,7 +81,7 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
               </div>
 
               <div className="bg-muted/30 p-6 md:p-8 rounded-3xl border border-border/50">
-                <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
+                <h4 className="text-xl font-bold mb-6 flex items-center gap-2 text-foreground">
                   <CheckCircle2 className="h-6 w-6 text-primary" />
                   Poin-Poin Penting
                 </h4>
@@ -100,7 +100,7 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
                   <div className="flex items-center gap-2">
                     <Sparkles className="h-6 w-6 text-primary" />
-                    <h4 className="text-xl font-bold">Ringkasan AI</h4>
+                    <h4 className="text-xl font-bold text-foreground">Ringkasan AI</h4>
                   </div>
                   {!summary && (
                     <Button
