@@ -2,8 +2,12 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: '',
-  description: '',
+  title: 'Platform Edukasi',
+  description: 'Belajar berbagai keahlian baru secara sistematis.',
+  icons: {
+    icon: [],
+    apple: [],
+  },
 };
 
 export default function RootLayout({
