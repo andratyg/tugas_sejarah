@@ -50,24 +50,17 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 glass-nav py-4",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 glass-nav py-6",
         scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0',
         !isScrolled && "bg-transparent border-transparent"
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center gap-3 group">
-            <img
-              src="https://spmb.smkwikrama.sch.id/assets/landing%20page/images/logo.png?v=10"
-              alt="Logo SMK Wikrama"
-              referrerPolicy="no-referrer"
-              className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
-            />
-            <div className="flex flex-col">
-              <span className="text-sm font-bold leading-none tracking-tight">SMK WIKRAMA</span>
-              <span className="text-[10px] text-muted-foreground font-medium uppercase">Bogor</span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <span className="text-xl md:text-2xl font-bold font-headline tracking-tighter transition-colors group-hover:text-primary">
+              TUGAS SEJARAH
+            </span>
           </Link>
         </div>
 
