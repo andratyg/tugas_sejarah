@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Educational background with abstract shapes",
+      "imageUrl": "https://picsum.photos/seed/eduhome/1920/1080",
+      "imageHint": "education abstract"
+    },
+    {
+      "id": "material-1",
+      "description": "Introduction to Digital Literacy",
+      "imageUrl": "https://picsum.photos/seed/material1/800/600",
+      "imageHint": "digital technology"
+    },
+    {
+      "id": "material-2",
+      "description": "Modern Web Development",
+      "imageUrl": "https://picsum.photos/seed/material2/800/600",
+      "imageHint": "coding programming"
+    },
+    {
+      "id": "material-3",
+      "description": "Graphic Design Principles",
+      "imageUrl": "https://picsum.photos/seed/material3/800/600",
+      "imageHint": "design art"
+    },
+    {
+      "id": "material-4",
+      "description": "Data Science Fundamentals",
+      "imageUrl": "https://picsum.photos/seed/material4/800/600",
+      "imageHint": "data analysis"
+    },
+    {
+      "id": "material-5",
+      "description": "Cyber Security Basics",
+      "imageUrl": "https://picsum.photos/seed/material5/800/600",
+      "imageHint": "security lock"
+    },
+    {
+      "id": "project-1",
+      "description": "Build a Personal Portfolio",
+      "imageUrl": "https://picsum.photos/seed/project1/800/600",
+      "imageHint": "portfolio website"
+    },
+    {
+      "id": "project-2",
+      "description": "Analyze Climate Data",
+      "imageUrl": "https://picsum.photos/seed/project2/800/600",
+      "imageHint": "climate environment"
+    },
+    {
+      "id": "project-3",
+      "description": "Design a Mobile App UI",
+      "imageUrl": "https://picsum.photos/seed/project3/800/600",
+      "imageHint": "mobile interface"
+    }
+  ]
 }

@@ -1,0 +1,62 @@
+'use server';
+
+/**
+ * @fileOverview A Genkit flow to generate a concise summary of learning material.
+ *
+ * - generateMaterialSummary - A function that generates an AI-powered summary of given material.
+ * - MaterialSummaryInput - The input type for the generateMaterialSummary function.
+ * - MaterialSummaryOutput - The return type for the generateMaterialSummary function.
+ */
+
+import { ai } from '@/ai/genkit';
+import { z } from 'genkit';
+
+// Input Schema for the material summary flow.
+const MaterialSummaryInputSchema = z.object({
+  materialContent: z.string().describe('The full text content of the learning material to be summarized.'),
+});
+export type MaterialSummaryInput = z.infer<typeof MaterialSummaryInputSchema>;
+
+// Output Schema for the material summary flow.
+const MaterialSummaryOutputSchema = z.object({
+  summary: z.string().describe('A concise AI-generated summary of the learning material, highlighting key points.'),
+});
+export type MaterialSummaryOutput = z.infer<typeof MaterialSummaryOutputSchema>;
+
+/**
+ * Generates a concise AI-powered summary of the provided learning material.
+ * @param input - The input containing the material content.
+ * @returns A promise that resolves to the generated summary.
+ */
+export async function generateMaterialSummary(input: MaterialSummaryInput): Promise<MaterialSummaryOutput> {
+  return materialSummaryFlow(input);
+}
+
+// Defines the prompt for generating material summaries.
+const materialSummaryPrompt = ai.definePrompt({
+  name: 'materialSummaryPrompt',
+  input: { schema: MaterialSummaryInputSchema },
+  output: { schema: MaterialSummaryOutputSchema },
+  prompt: `Please provide a concise and clear summary of the following learning material.
+Focus on extracting the most important key points and concepts.
+The summary should be easy to understand and suitable for quick comprehension.
+
+Learning Material:
+{{{materialContent}}}`,
+});
+
+// Defines the Genkit flow for generating material summaries.
+const materialSummaryFlow = ai.defineFlow(
+  {
+    name: 'materialSummaryFlow',
+    inputSchema: MaterialSummaryInputSchema,
+    outputSchema: MaterialSummaryOutputSchema,
+  },
+  async (input) => {
+    const { output } = await materialSummaryPrompt(input);
+    if (!output) {
+      throw new Error('Failed to generate summary.');
+    }
+    return output;
+  }
+);
