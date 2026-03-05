@@ -3,10 +3,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useScrollDirection } from '@/hooks/use-scroll-direction';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Navbar() {
   const scrollDirection = useScrollDirection();
@@ -14,13 +16,14 @@ export function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const logoImg = PlaceHolderImages.find(img => img.id === 'logo-wikrama')!;
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
 
-    // Initial check for theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDarkMode(true);
@@ -58,8 +61,19 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold font-headline text-primary">
-          IlmuNesia
+        <Link href="/" className="flex items-center gap-3">
+          <div className="relative h-10 w-10">
+            <Image 
+              src={logoImg.imageUrl} 
+              alt="Wikrama Logo" 
+              fill 
+              className="object-contain"
+              data-ai-hint="school logo"
+            />
+          </div>
+          <span className="text-2xl font-bold font-headline text-primary">
+            IlmuNesia
+          </span>
         </Link>
 
         {/* Desktop Menu */}
