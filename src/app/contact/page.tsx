@@ -17,18 +17,18 @@ export default function ContactPage() {
       avatarSeed: "nara"
     },
     {
-      name: "Aulia Putri",
+      name: "Bagus Arief I.",
       role: "Creative Director",
-      email: "aulia@ilmunesia.com",
-      instagram: "aulia_design",
-      avatarSeed: "aulia"
+      email: "bagus@ilmunesia.com",
+      instagram: "bagus_arief",
+      avatarSeed: "bagus"
     },
     {
-      name: "Reza Pratama",
+      name: "Rafa Alfarizky",
       role: "Technical Lead",
-      email: "reza@ilmunesia.com",
-      instagram: "reza_pratama",
-      avatarSeed: "reza"
+      email: "rafa@ilmunesia.com",
+      instagram: "rafa_alfa",
+      avatarSeed: "rafa"
     }
   ];
 
