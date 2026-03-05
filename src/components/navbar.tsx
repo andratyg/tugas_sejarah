@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -58,10 +59,10 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center group gap-3">
-            <div className="relative h-10 w-10 overflow-hidden rounded-lg">
+          <Link href="/" className="flex items-center group gap-4">
+            <div className="relative h-10 w-10">
               <Image 
-                src="https://spmb.smkwikrama.sch.id/img/logo-wk.png" 
+                src="https://upload.wikimedia.org/wikipedia/commons/d/df/Logo_SMK_Wikrama_Bogor.png" 
                 alt="Logo Wikrama" 
                 fill
                 className="object-contain"
