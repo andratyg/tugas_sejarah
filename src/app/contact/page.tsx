@@ -20,31 +20,31 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 export default function ContactPage() {
   const team = [
     {
-      name: "Andi Saputra",
-      role: "Lead Developer",
-      email: "andi@ilmunesia.com",
-      instagram: "andi_saputra",
-      tiktok: "andi.dev",
-      linkedin: "andisaputra",
-      avatarSeed: "andi"
+      name: "Nara Andra Tyaga",
+      role: "Lead Strategist",
+      email: "nara@ilmunesia.com",
+      instagram: "nara_andra",
+      tiktok: "nara.tyaga",
+      linkedin: "naratyaga",
+      avatarSeed: "nara"
     },
     {
-      name: "Siti Aminah",
-      role: "UI/UX Designer",
-      email: "siti@ilmunesia.com",
-      instagram: "siti_design",
-      tiktok: "siti.creative",
-      linkedin: "sitiaminah",
-      avatarSeed: "siti"
+      name: "Aulia Putri",
+      role: "Creative Director",
+      email: "aulia@ilmunesia.com",
+      instagram: "aulia_design",
+      tiktok: "aulia.creative",
+      linkedin: "auliaputri",
+      avatarSeed: "aulia"
     },
     {
-      name: "Budi Pratama",
-      role: "Content Specialist",
-      email: "budi@ilmunesia.com",
-      instagram: "budi_pratama",
-      tiktok: "budi.edutok",
-      linkedin: "budipratama",
-      avatarSeed: "budi"
+      name: "Reza Pratama",
+      role: "Technical Lead",
+      email: "reza@ilmunesia.com",
+      instagram: "reza_pratama",
+      tiktok: "reza.dev",
+      linkedin: "rezapratama",
+      avatarSeed: "reza"
     }
   ];
 
