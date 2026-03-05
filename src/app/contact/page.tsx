@@ -93,16 +93,6 @@ export default function ContactPage() {
               </Card>
             ))}
           </div>
-
-          <div className="mt-20 text-center bg-muted/30 p-12 rounded-[3rem] max-w-2xl mx-auto border border-border/50">
-            <h2 className="text-2xl font-bold mb-4">Butuh Bantuan Cepat?</h2>
-            <p className="text-muted-foreground mb-6">
-              Untuk pertanyaan umum atau kerjasama platform, silakan kirimkan pesan ke email resmi kami.
-            </p>
-            <Button className="rounded-full px-8 h-12 font-bold" asChild>
-              <a href="mailto:halo@ilmunesia.com">Email Resmi: halo@ilmunesia.com</a>
-            </Button>
-          </div>
         </div>
       </main>
       <Footer />
