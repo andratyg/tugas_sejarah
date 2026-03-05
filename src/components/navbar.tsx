@@ -61,7 +61,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative h-10 w-10 transition-transform duration-300 group-hover:scale-110">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/id/a/a2/Logo_Wikrama.png"
+                src="https://upload.wikimedia.org/wikipedia/id/a/a2/Logo_Wikrama.png?v=1"
                 alt="Logo SMK Wikrama"
                 fill
                 className="object-contain"
