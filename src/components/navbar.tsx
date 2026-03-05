@@ -59,8 +59,9 @@ export function Navbar() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-3 group">
             <img
-              src="https://upload.wikimedia.org/wikipedia/id/a/a2/Logo_Wikrama.png"
+              src="https://upload.wikimedia.org/wikipedia/id/thumb/a/a2/Logo_Wikrama.png/120px-Logo_Wikrama.png"
               alt="Logo SMK Wikrama"
+              referrerPolicy="no-referrer"
               className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
             />
             <div className="flex flex-col">
