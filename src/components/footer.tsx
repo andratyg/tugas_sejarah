@@ -16,19 +16,11 @@ export function Footer() {
             <div className="h-1 w-12 bg-primary/30 mx-auto rounded-full" />
           </div>
 
-          {/* Historical Narrative */}
+          {/* Historical Narrative - Only Quote */}
           <div className="space-y-8">
-            <p className="text-2xl md:text-3xl font-headline font-medium text-foreground leading-tight italic">
+            <p className="text-2xl md:text-3xl font-headline font-medium text-foreground leading-tight italic max-w-2xl mx-auto">
               "Bangsa yang besar adalah bangsa yang tidak pernah melupakan sejarahnya."
             </p>
-            <div className="space-y-4 max-w-2xl mx-auto">
-              <p className="text-muted-foreground text-base leading-relaxed">
-                IlmuNesia hadir sebagai jembatan antara masa lalu dan masa depan. Kami percaya bahwa dengan memahami jejak langkah para pendahulu, kita dapat membangun fondasi yang lebih kokoh untuk peradaban yang akan datang.
-              </p>
-              <p className="text-sm text-primary/60 font-medium uppercase tracking-[0.3em]">
-                Menjaga Warisan • Menginspirasi Masa Depan
-              </p>
-            </div>
           </div>
 
           {/* Bottom Copyright */}
