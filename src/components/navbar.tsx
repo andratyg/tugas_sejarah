@@ -58,8 +58,8 @@ export function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center group">
-            <span className="text-xl md:text-2xl font-bold font-headline tracking-tighter transition-colors group-hover:text-primary">
-              TUGAS SEJARAH
+            <span className="text-xl md:text-2xl font-bold font-headline tracking-tighter transition-colors group-hover:text-primary uppercase">
+              Tugas Sejarah
             </span>
           </Link>
         </div>
