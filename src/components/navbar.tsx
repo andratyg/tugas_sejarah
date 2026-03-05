@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useScrollDirection } from '@/hooks/use-scroll-direction';
 import { cn } from '@/lib/utils';
@@ -50,17 +51,31 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 glass-nav py-6",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 glass-nav py-4",
         scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0',
         !isScrolled && "bg-transparent border-transparent"
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center group">
-            <span className="text-xl md:text-2xl font-bold font-headline tracking-tighter transition-colors group-hover:text-primary uppercase">
-              Tugas Sejarah
-            </span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative h-12 w-12 shrink-0">
+              <Image 
+                src="https://spmb.smkwikrama.sch.id/assets/landing%20page/images/logo.png"
+                alt="Logo SMK Wikrama Bogor"
+                fill
+                className="object-contain"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="flex flex-col leading-none">
+              <span className="text-lg md:text-xl font-bold font-headline tracking-tight uppercase group-hover:text-primary transition-colors">
+                SMK Wikrama
+              </span>
+              <span className="text-xs md:text-sm font-semibold tracking-[0.2em] text-muted-foreground uppercase">
+                Bogor
+              </span>
+            </div>
           </Link>
         </div>
 
