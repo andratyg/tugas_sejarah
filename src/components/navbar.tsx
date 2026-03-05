@@ -59,8 +59,8 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center group gap-4">
-            <div className="relative h-10 w-10">
+          <Link href="/" className="flex items-center group gap-3">
+            <div className="relative h-12 w-12">
               <Image 
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Logo_SMK_Wikrama_Bogor.png/600px-Logo_SMK_Wikrama_Bogor.png" 
                 alt="Logo Wikrama" 
@@ -70,9 +70,14 @@ export function Navbar() {
                 priority
               />
             </div>
-            <span className="text-xl md:text-2xl font-bold font-headline tracking-tight uppercase group-hover:text-primary transition-colors">
-              Tugas Sejarah
-            </span>
+            <div className="flex flex-col leading-tight">
+              <span className="text-lg md:text-xl font-bold font-headline tracking-tight uppercase group-hover:text-primary transition-colors">
+                SMK Wikrama
+              </span>
+              <span className="text-[10px] md:text-xs font-semibold tracking-[0.3em] text-muted-foreground uppercase">
+                Bogor
+              </span>
+            </div>
           </Link>
         </div>
 
