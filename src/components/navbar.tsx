@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useScrollDirection } from '@/hooks/use-scroll-direction';
 import { cn } from '@/lib/utils';
@@ -58,17 +57,8 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative h-12 w-12 shrink-0">
-              <Image 
-                src="https://spmb.smkwikrama.sch.id/assets/landing%20page/images/logo.png"
-                alt="Logo SMK Wikrama Bogor"
-                fill
-                className="object-contain"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="flex flex-col leading-none">
+          <Link href="/" className="flex items-center group">
+            <div className="flex flex-col leading-tight">
               <span className="text-lg md:text-xl font-bold font-headline tracking-tight uppercase group-hover:text-primary transition-colors">
                 SMK Wikrama
               </span>
