@@ -3,7 +3,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useScrollDirection } from '@/hooks/use-scroll-direction';
 import { cn } from '@/lib/utils';
@@ -60,16 +59,6 @@ export function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="flex items-center group gap-3">
-            <div className="relative h-12 w-12">
-              <Image 
-                src="https://spmb.smkwikrama.sch.id/assets/images/logo-wikrama.png" 
-                alt="Logo Wikrama" 
-                fill
-                className="object-contain"
-                unoptimized
-                priority
-              />
-            </div>
             <div className="flex flex-col leading-tight">
               <span className="text-lg md:text-xl font-bold font-headline tracking-tight uppercase group-hover:text-primary transition-colors">
                 SMK Wikrama
