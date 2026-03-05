@@ -1,13 +1,9 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Platform Edukasi Modern',
   description: 'Platform edukasi interaktif untuk menampilkan materi pembelajaran dengan visual yang menarik dan teknologi AI.',
-  icons: {
-    icon: [],
-  },
 };
 
 export default function RootLayout({
