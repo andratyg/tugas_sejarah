@@ -45,7 +45,6 @@ export function Navbar() {
   const navItems = [
     { name: 'Home', href: '#' },
     { name: 'Materi', href: '#materi' },
-    { name: 'Proyek', href: '#proyek' },
     { name: 'Tentang', href: '#tentang' },
     { name: 'Kontak', href: '#kontak' },
   ];

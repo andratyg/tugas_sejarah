@@ -2,7 +2,6 @@
 import { Navbar } from '@/components/navbar';
 import { Hero } from '@/components/hero';
 import { Timeline } from '@/components/timeline';
-import { Projects } from '@/components/projects';
 import { Footer } from '@/components/footer';
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
       <main>
         <Hero />
         <Timeline />
-        <Projects />
       </main>
       <Footer />
     </div>

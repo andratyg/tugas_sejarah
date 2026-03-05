@@ -36,9 +36,6 @@ export function Hero() {
           <Button size="lg" className="h-14 px-8 text-lg font-semibold rounded-full bg-primary hover:scale-105 transition-transform" asChild>
             <a href="#materi">Mulai Belajar</a>
           </Button>
-          <Button size="lg" variant="outline" className="h-14 px-8 text-lg font-semibold rounded-full border-primary text-primary hover:bg-primary/5 hover:scale-105 transition-transform" asChild>
-            <a href="#proyek">Lihat Proyek</a>
-          </Button>
         </div>
       </div>
 
