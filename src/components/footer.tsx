@@ -8,11 +8,8 @@ export function Footer() {
     <footer className="bg-background border-t py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center space-y-12">
-          {/* Brand */}
+          {/* Brand section hidden */}
           <div className="space-y-4">
-            <Link href="/" className="text-4xl font-bold font-headline text-primary tracking-tighter inline-block">
-              IlmuNesia
-            </Link>
             <div className="h-1 w-12 bg-primary/30 mx-auto rounded-full" />
           </div>
 
@@ -26,7 +23,7 @@ export function Footer() {
           {/* Bottom Copyright */}
           <div className="pt-16 border-t border-primary/10">
             <p className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground font-semibold">
-              © {new Date().getFullYear()} IlmuNesia. Seluruh Hak Cipta Dilindungi.
+              © {new Date().getFullYear()} Seluruh Hak Cipta Dilindungi.
             </p>
           </div>
         </div>
