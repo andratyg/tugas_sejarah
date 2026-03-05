@@ -57,8 +57,8 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center min-w-[40px] h-8">
-          {/* Logo/Brand text removed */}
+        <Link href="/" className="flex items-center">
+          {/* Logo and Brand text removed */}
         </Link>
 
         {/* Desktop Menu */}
