@@ -1,4 +1,6 @@
 
+"use client";
+
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { Mail, Instagram, User } from 'lucide-react';
@@ -12,21 +14,21 @@ export default function ContactPage() {
       name: "Nara Andra T.",
       id: "12511245",
       role: "Lead Strategist",
-      email: "nara@ilmunesia.com",
+      email: "naraandratyaga@smkwikrama.sch.id",
       instagram: "andra_tyg",
       avatarSeed: "nara"
     },
     {
       name: "Bagus Arief I.",
       role: "Creative Director",
-      email: "bagus@ilmunesia.com",
+      email: "bagusariefishakyudin@smkwikrama.sch.id",
       instagram: "bagus_arief",
       avatarSeed: "bagus"
     },
     {
       name: "Rafa Alfarizky",
       role: "Technical Lead",
-      email: "rafa@ilmunesia.com",
+      email: "rafaalfarizky@smkwikrama.sch.id",
       instagram: "rafa_alfa",
       avatarSeed: "rafa"
     }
@@ -40,7 +42,7 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4 text-primary">Hubungi Tim Kami</h1>
             <p className="text-lg text-muted-foreground">
-              Kenali lebih dekat orang-orang di balik IlmuNesia. Jangan ragu untuk menyapa kami!
+              Kenali lebih dekat orang-orang di balik platform ini. Jangan ragu untuk menyapa kami!
             </p>
           </div>
 
@@ -65,7 +67,7 @@ export default function ContactPage() {
                     <Button variant="ghost" className="w-full justify-start gap-3 rounded-xl hover:bg-primary/5 hover:text-primary transition-colors h-12" asChild>
                       <a href={`mailto:${member.email}`}>
                         <Mail className="h-4 w-4" />
-                        <span className="text-xs truncate">{member.email}</span>
+                        <span className="text-[10px] truncate">{member.email}</span>
                       </a>
                     </Button>
                     <Button variant="ghost" className="w-full justify-start gap-3 rounded-xl hover:bg-pink-500/5 hover:text-pink-600 transition-colors h-12" asChild>
