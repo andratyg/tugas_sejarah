@@ -2,10 +2,11 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Platform Edukasi Modern',
-  description: 'Platform edukasi interaktif untuk menampilkan materi pembelajaran dengan visual yang menarik dan teknologi AI.',
+  title: ' ',
+  description: ' ',
   icons: {
-    icon: [],
+    icon: 'data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=',
+    apple: 'data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=',
   },
 };
 
