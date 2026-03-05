@@ -62,11 +62,12 @@ export function Navbar() {
           <Link href="/" className="flex items-center group gap-4">
             <div className="relative h-10 w-10">
               <Image 
-                src="https://spmb.smkwikrama.sch.id/assets/img/logo-wikrama.png" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Logo_SMK_Wikrama_Bogor.png/600px-Logo_SMK_Wikrama_Bogor.png" 
                 alt="Logo Wikrama" 
                 fill
                 className="object-contain"
                 unoptimized
+                priority
               />
             </div>
             <span className="text-xl md:text-2xl font-bold font-headline tracking-tight uppercase group-hover:text-primary transition-colors">
