@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -43,7 +42,7 @@ export function Navbar() {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Materi', href: '/#materi' },
+    { name: 'Materi IPTEK', href: '/#materi' },
     { name: 'Tentang', href: '/about' },
     { name: 'Kontak', href: '/contact' },
   ];
