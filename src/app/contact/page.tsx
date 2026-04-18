@@ -13,19 +13,19 @@ export default function ContactPage() {
     {
       name: "Nara Andra T.",
       id: "12511245",
-      role: "Lead Strategist",
+      role: "full stack developer",
       email: "naraandratyaga@smkwikrama.sch.id",
       instagram: "andra_tyg"
     },
     {
       name: "Bagus Arief I.",
-      role: "Creative Director",
+      role: "Pencari Materi",
       email: "bagusariefishakyudin@smkwikrama.sch.id",
       instagram: "bagus_arief"
     },
     {
       name: "Rafa Alfarizky",
-      role: "Technical Lead",
+      role: "",
       email: "rafaalfarizky@smkwikrama.sch.id",
       instagram: "rafa_alfa"
     }
