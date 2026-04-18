@@ -37,6 +37,48 @@
       "imageHint": "historical dam"
     },
     {
+      "id": "material-6",
+      "description": "Botanical garden landscape",
+      "imageUrl": "https://picsum.photos/seed/botany/800/600",
+      "imageHint": "botanical garden"
+    },
+    {
+      "id": "material-7",
+      "description": "Historical telescope in Bosscha",
+      "imageUrl": "https://picsum.photos/seed/telescope/800/600",
+      "imageHint": "astronomical observatory"
+    },
+    {
+      "id": "material-8",
+      "description": "Vintage electricity power station",
+      "imageUrl": "https://picsum.photos/seed/powerplant/800/600",
+      "imageHint": "vintage electricity"
+    },
+    {
+      "id": "material-9",
+      "description": "Old propeller aircraft",
+      "imageUrl": "https://picsum.photos/seed/vintageplane/800/600",
+      "imageHint": "vintage aircraft"
+    },
+    {
+      "id": "material-10",
+      "description": "Oil drilling rig historical",
+      "imageUrl": "https://picsum.photos/seed/oilrig/800/600",
+      "imageHint": "oil drilling"
+    },
+    {
+      "id": "material-11",
+      "description": "Art Deco colonial building",
+      "imageUrl": "https://picsum.photos/seed/artdeco/800/600",
+      "imageHint": "colonial architecture"
+    },
+    {
+      "id": "material-12",
+      "description": "Old vintage steam mill",
+      "imageUrl": "https://picsum.photos/seed/steammill/800/600",
+      "imageHint": "steam mill"
+    },
+    {
       "id": "project-1",
       "description": "Historical archive documents",
       "imageUrl": "https://picsum.photos/seed/archive/800/600",
