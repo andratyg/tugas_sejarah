@@ -16,21 +16,22 @@ export default function ContactPage() {
       role: "Lead Strategist",
       email: "naraandratyaga@smkwikrama.sch.id",
       instagram: "andra_tyg",
-      avatarSeed: "nara"
+      // Menggunakan placeholder yang menyerupai deskripsi foto (pelajar/profesional)
+      imageUrl: "https://picsum.photos/seed/nara_andra/400/500"
     },
     {
       name: "Bagus Arief I.",
       role: "Creative Director",
       email: "bagusariefishakyudin@smkwikrama.sch.id",
       instagram: "bagus_arief",
-      avatarSeed: "bagus"
+      imageUrl: "https://picsum.photos/seed/bagus/400/500"
     },
     {
       name: "Rafa Alfarizky",
       role: "Technical Lead",
       email: "rafaalfarizky@smkwikrama.sch.id",
       instagram: "rafa_alfa",
-      avatarSeed: "rafa"
+      imageUrl: "https://picsum.photos/seed/rafa/400/500"
     }
   ];
 
@@ -42,7 +43,7 @@ export default function ContactPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold font-headline mb-4 text-primary">Hubungi Tim Kami</h1>
             <p className="text-lg text-muted-foreground">
-              Kenali lebih dekat orang-orang di balik platform ini. Jangan ragu untuk menyapa kami!
+              Kenali lebih dekat orang-orang di balik platform analisis IPTEK Kolonial ini.
             </p>
           </div>
 
@@ -51,8 +52,12 @@ export default function ContactPage() {
               <Card key={i} className="border-none shadow-xl rounded-[2.5rem] bg-card overflow-hidden hover:shadow-2xl transition-all duration-300">
                 <CardHeader className="text-center pt-10 pb-4">
                   <div className="flex justify-center mb-4">
-                    <Avatar className="h-24 w-24 border-4 border-primary/10">
-                      <AvatarImage src={`https://picsum.photos/seed/${member.avatarSeed}/200/200`} alt={member.name} />
+                    <Avatar className="h-32 w-32 border-4 border-primary/10 rounded-2xl">
+                      <AvatarImage 
+                        src={member.imageUrl} 
+                        alt={member.name} 
+                        className="object-cover"
+                      />
                       <AvatarFallback><User /></AvatarFallback>
                     </Avatar>
                   </div>
