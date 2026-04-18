@@ -2,57 +2,57 @@
   "placeholderImages": [
     {
       "id": "hero-bg",
-      "description": "Educational background with abstract shapes",
-      "imageUrl": "https://picsum.photos/seed/eduhome/1920/1080",
-      "imageHint": "education abstract"
+      "description": "Historical Dutch colonial architecture",
+      "imageUrl": "https://picsum.photos/seed/history/1920/1080",
+      "imageHint": "colonial architecture"
     },
     {
       "id": "material-1",
-      "description": "Introduction to Digital Literacy",
-      "imageUrl": "https://picsum.photos/seed/material1/800/600",
-      "imageHint": "digital technology"
+      "description": "Old vintage steam locomotive",
+      "imageUrl": "https://picsum.photos/seed/steamtrain/800/600",
+      "imageHint": "vintage locomotive"
     },
     {
       "id": "material-2",
-      "description": "Modern Web Development",
-      "imageUrl": "https://picsum.photos/seed/material2/800/600",
-      "imageHint": "coding programming"
+      "description": "Old telegraph machine and cables",
+      "imageUrl": "https://picsum.photos/seed/telegraph/800/600",
+      "imageHint": "antique telegraph"
     },
     {
       "id": "material-3",
-      "description": "Graphic Design Principles",
-      "imageUrl": "https://picsum.photos/seed/material3/800/600",
-      "imageHint": "design art"
+      "description": "Old university building in Bandung",
+      "imageUrl": "https://picsum.photos/seed/itbold/800/600",
+      "imageHint": "university building"
     },
     {
       "id": "material-4",
-      "description": "Data Science Fundamentals",
-      "imageUrl": "https://picsum.photos/seed/material4/800/600",
-      "imageHint": "data analysis"
+      "description": "Historical medical laboratory tools",
+      "imageUrl": "https://picsum.photos/seed/medical/800/600",
+      "imageHint": "medical laboratory"
     },
     {
       "id": "material-5",
-      "description": "Cyber Security Basics",
-      "imageUrl": "https://picsum.photos/seed/material5/800/600",
-      "imageHint": "security lock"
+      "description": "Old historical dam or water irrigation system",
+      "imageUrl": "https://picsum.photos/seed/irrigation/800/600",
+      "imageHint": "historical dam"
     },
     {
       "id": "project-1",
-      "description": "Build a Personal Portfolio",
-      "imageUrl": "https://picsum.photos/seed/project1/800/600",
-      "imageHint": "portfolio website"
+      "description": "Historical archive documents",
+      "imageUrl": "https://picsum.photos/seed/archive/800/600",
+      "imageHint": "history archive"
     },
     {
       "id": "project-2",
-      "description": "Analyze Climate Data",
-      "imageUrl": "https://picsum.photos/seed/project2/800/600",
-      "imageHint": "climate environment"
+      "description": "Old vintage map of Indonesia",
+      "imageUrl": "https://picsum.photos/seed/oldmap/800/600",
+      "imageHint": "vintage map"
     },
     {
       "id": "project-3",
-      "description": "Design a Mobile App UI",
-      "imageUrl": "https://picsum.photos/seed/project3/800/600",
-      "imageHint": "mobile interface"
+      "description": "Historical photo of Indonesian students",
+      "imageUrl": "https://picsum.photos/seed/students/800/600",
+      "imageHint": "history education"
     }
   ]
 }

@@ -9,62 +9,62 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const MATERIALS = [
   {
     id: 'm1',
-    title: 'Literasi Digital',
-    description: 'Memahami dasar-dasar navigasi dunia digital dengan aman dan efektif.',
-    fullContent: 'Literasi digital adalah kemampuan untuk menemukan, mengevaluasi, dan mengomunikasikan informasi melalui berbagai platform digital. Di era modern ini, kecakapan ini menjadi sangat krusial.\n\nAnda akan mempelajari bagaimana membedakan informasi valid dari hoaks, dasar-dasar keamanan siber pribadi, dan cara berinteraksi secara etis di media sosial. Pembelajaran ini dirancang untuk semua usia.',
+    title: 'Revolusi Transportasi Rel',
+    description: 'Pembangunan jalur kereta api pertama di Hindia Belanda.',
+    fullContent: 'Salah satu dampak signifikan penjajahan Belanda di bidang IPTEK adalah pengenalan sistem transportasi kereta api. Pada tahun 1864, Gubernur Jenderal Baron Sloet van de Beele meresmikan pembangunan jalur kereta api pertama yang menghubungkan Semarang dan Kedungjati oleh perusahaan NIS (Nederlandsch-Indische Spoorweg Maatschappij).\n\nTeknologi ini awalnya ditujukan untuk mempermudah mobilisasi hasil bumi dari pedalaman ke pelabuhan, namun kemudian berkembang menjadi sarana transportasi publik yang revolusioner bagi masyarakat pribumi. Pembangunan ini memperkenalkan teknologi jembatan besi dan lokomotif uap canggih pada masanya.',
     image: PlaceHolderImages.find(img => img.id === 'material-1')!.imageUrl,
-    points: ['Keamanan Kata Sandi', 'Etika Internet', 'Verifikasi Sumber', 'Privasi Data'],
+    points: ['Jalur Semarang-Solo-Yogya', 'Teknologi Lokomotif Uap', 'Stasiun Bersejarah', 'Mobilisasi Ekonomi'],
     references: [
-      { name: 'Kementerian Komunikasi dan Informatika', url: 'https://kominfo.go.id' },
-      { name: 'Wikipedia: Digital Literacy', url: 'https://id.wikipedia.org/wiki/Literasi_digital' }
+      { name: 'Sejarah Perkeretaapian Indonesia', url: 'https://heritage.kai.id' },
+      { name: 'Wikipedia: Kereta Api Kolonial', url: 'https://id.wikipedia.org/wiki/Sejarah_perkeretaapian_di_Indonesia' }
     ]
   },
   {
     id: 'm2',
-    title: 'Dasar Pemrograman',
-    description: 'Langkah pertama memasuki dunia pembuatan perangkat lunak.',
-    fullContent: 'Pemrograman bukan hanya tentang menulis kode, tapi tentang pemecahan masalah (problem solving). Materi ini akan membawa Anda mengenal konsep logika dasar yang digunakan oleh semua bahasa pemrograman.\n\nKita akan membahas tentang variabel, tipe data, struktur kontrol (if/else), dan pengulangan (loops). Konsep-konsep ini adalah fondasi bagi siapa pun yang ingin menjadi pengembang web atau aplikasi mobile.',
+    title: 'Sistem Telekomunikasi Modern',
+    description: 'Lahirnya jaringan telegraf dan integrasi informasi.',
+    fullContent: 'Belanda memperkenalkan teknologi komunikasi jarak jauh melalui telegraf. Jaringan telegraf pertama di Indonesia dibangun pada tahun 1855, menghubungkan Batavia (Jakarta) dan Buitenzorg (Bogor).\n\nTeknologi ini memungkinkan pengiriman pesan kilat untuk keperluan militer dan birokrasi pemerintahan kolonial. Selain telegraf, pembangunan "Grote Postweg" (Jalan Raya Pos) oleh Daendels juga menjadi pondasi sistem logistik dan komunikasi darat yang menghubungkan ujung barat hingga timur pulau Jawa.',
     image: PlaceHolderImages.find(img => img.id === 'material-2')!.imageUrl,
-    points: ['Logika Algoritma', 'Struktur Data Dasar', 'Sintaksis Dasar', 'Debugging'],
+    points: ['Kabel Telegraf Bawah Laut', 'Layanan Pos Modern', 'Integrasi Pulau Jawa', 'Teknologi Sinyal'],
     references: [
-      { name: 'MDN Web Docs', url: 'https://developer.mozilla.org' },
-      { name: 'W3Schools Indonesia', url: 'https://w3schools.com' }
+      { name: 'Museum Pos Indonesia', url: 'https://posindonesia.co.id' },
+      { name: 'Sejarah Telekomunikasi', url: 'https://id.wikipedia.org/wiki/Telegraf' }
     ]
   },
   {
     id: 'm3',
-    title: 'Prinsip Desain Grafis',
-    description: 'Seni menyampaikan pesan melalui elemen visual yang estetis.',
-    fullContent: 'Desain grafis adalah tentang komunikasi visual. Materi ini mengeksplorasi bagaimana elemen seperti warna, tipografi, dan tata letak bekerja sama untuk menciptakan kesan tertentu.\n\nAnda akan belajar tentang psikologi warna, aturan "rule of thirds", dan bagaimana memilih font yang tepat untuk berbagai tujuan. Memahami estetika dasar akan membantu Anda menciptakan karya yang tidak hanya cantik tapi juga fungsional.',
+    title: 'Lembaga Pendidikan Teknik',
+    description: 'Pendirian THS Bandung sebagai pusat sains modern.',
+    fullContent: 'Di bidang pendidikan tinggi, Belanda mendirikan Technische Hoogeschool te Bandoeng (THS) pada 3 Juli 1920, yang sekarang dikenal sebagai ITB. Ini adalah lembaga pendidikan tinggi teknik pertama di Indonesia.\n\nPendirian ini membawa kurikulum sains Barat, metode eksperimen laboratorium, dan standar teknik Eropa ke tanah air. Salah satu lulusan ternama dari THS adalah Ir. Soekarno, presiden pertama Indonesia, yang merupakan bukti nyata dampak intelektual lembaga ini terhadap bangsa Indonesia.',
     image: PlaceHolderImages.find(img => img.id === 'material-3')!.imageUrl,
-    points: ['Psikologi Warna', 'Tipografi Modern', 'Komposisi Visual', 'Branding Dasar'],
+    points: ['Lahirnya ITB', 'Pendidikan Insinyur Lokal', 'Laboratorium Fisika-Kimia', 'Sains Terapan'],
     references: [
-      { name: 'Canva Design School', url: 'https://www.canva.com/learn/' },
-      { name: 'Adobe Design Principles', url: 'https://creativecloud.adobe.com' }
+      { name: 'Sejarah ITB', url: 'https://itb.ac.id/sejarah' },
+      { name: 'Wikipedia: THS Bandoeng', url: 'https://id.wikipedia.org/wiki/Institut_Teknologi_Bandung' }
     ]
   },
   {
     id: 'm4',
-    title: 'Analisis Data',
-    description: 'Mengubah angka-angka mentah menjadi wawasan yang berharga.',
-    fullContent: 'Data adalah emas baru di abad ke-21. Namun, data mentah tidak berguna tanpa analisis yang tepat. Materi ini mengajarkan dasar-dasar pengolahan data menggunakan metode statistik sederhana.\n\nKita akan melihat cara menggunakan spreadsheet secara efektif, memvisualisasikan data dalam bentuk grafik yang mudah dipahami, dan menarik kesimpulan berdasarkan bukti yang ada.',
+    title: 'Ilmu Kedokteran Tropis',
+    description: 'Peran STOVIA dalam kesehatan dan penemuan Nobel.',
+    fullContent: 'Perkembangan IPTEK kesehatan dimulai dengan pendirian Sekolah Dokter Jawa yang berkembang menjadi STOVIA (School tot Opleiding van Indische Artsen). Lembaga ini memperkenalkan metode medis Barat untuk menangani penyakit endemik di wilayah tropis.\n\nPenelitian besar terjadi di Batavia, di mana Christiaan Eijkman menemukan penyebab penyakit beri-beri (kekurangan Vitamin B1) di laboratorium kesehatan yang sekarang bernama Lembaga Eijkman. Penemuan ini dianugerahi Hadiah Nobel Kedokteran pada tahun 1929.',
     image: PlaceHolderImages.find(img => img.id === 'material-4')!.imageUrl,
-    points: ['Pengolahan Spreadsheet', 'Visualisasi Grafik', 'Statistik Deskriptif', 'Interpretasi Tren'],
+    points: ['Penelitian Beri-beri', 'Lahirnya STOVIA', 'Vaksinasi Massal', 'Farmasi Modern'],
     references: [
-      { name: 'Kaggle Data Science', url: 'https://www.kaggle.com/learn' },
-      { name: 'Data.go.id', url: 'https://data.go.id' }
+      { name: 'Lembaga Eijkman', url: 'https://www.eijkman.go.id' },
+      { name: 'Museum Kebangkitan Nasional', url: 'https://muskebangnas.id' }
     ]
   },
   {
     id: 'm5',
-    title: 'Keamanan Siber',
-    description: 'Melindungi aset digital Anda dari ancaman di dunia maya.',
-    fullContent: 'Dengan semakin banyaknya aktivitas kita yang berpindah ke internet, keamanan siber menjadi kebutuhan mendasar. Materi ini membahas cara-cara praktis untuk membentengi diri dari serangan umum seperti phishing, malware, dan social engineering.\n\nAnda akan belajar mengapa Multi-Factor Authentication (MFA) itu penting dan bagaimana menjaga identitas digital tetap aman di jaringan publik.',
+    title: 'Teknologi Irigasi & Pertanian',
+    description: 'Penerapan bendungan dan sistem pengairan sistematis.',
+    fullContent: 'Belanda memperkenalkan teknologi irigasi modern untuk mendukung sistem perkebunan besar (Plantation System). Mereka membangun bendungan-bendungan besar dan sistem pintu air otomatis di berbagai daerah di Jawa dan Sumatera.\n\nTeknologi ini menggunakan prinsip hidrolika Eropa untuk mengatur debit air secara presisi. Meskipun awalnya untuk kepentingan ekspor kolonial, infrastruktur ini menjadi pondasi bagi sistem pengairan pertanian padi di Indonesia pasca-kemerdekaan.',
     image: PlaceHolderImages.find(img => img.id === 'material-5')!.imageUrl,
-    points: ['Ancaman Phishing', 'Enkripsi Dasar', 'Keamanan Jaringan', 'Manajemen Identitas'],
+    points: ['Bendungan Beton', 'Pintu Air Otomatis', 'Hidrolika Pertanian', 'Tanaman Ekspor Baru'],
     references: [
-      { name: 'BSSN Indonesia', url: 'https://bssn.go.id' },
-      { name: 'Cisco Networking Academy', url: 'https://www.netacad.com' }
+      { name: 'Sejarah Irigasi Indonesia', url: 'https://sda.pu.go.id' },
+      { name: 'Wikipedia: Irigasi Belanda', url: 'https://id.wikipedia.org/wiki/Irigasi' }
     ]
   }
 ];
@@ -76,9 +76,9 @@ export function Timeline() {
     <section id="materi" className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4">Jalur Pembelajaran</h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
-            Ikuti kurikulum kami yang disusun secara sistematis untuk memandu Anda dari nol hingga mahir.
+          <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 text-primary">Dampak Penjajahan Belanda di Bidang IPTEK</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Pelajari bagaimana teknologi, sains, dan infrastruktur modern diperkenalkan ke Indonesia melalui jalur sejarah kolonialisme.
           </p>
         </div>
 
