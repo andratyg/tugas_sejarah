@@ -16,22 +16,22 @@ export default function ContactPage() {
       role: "Lead Strategist",
       email: "naraandratyaga@smkwikrama.sch.id",
       instagram: "andra_tyg",
-      // Menggunakan placeholder yang menyerupai deskripsi foto (pelajar/profesional)
-      imageUrl: "https://picsum.photos/seed/nara_andra/400/500"
+      // Instruksi: Taruh file foto Anda di: public/team/nara.jpg
+      imageUrl: "/team/nara.jpg"
     },
     {
       name: "Bagus Arief I.",
       role: "Creative Director",
       email: "bagusariefishakyudin@smkwikrama.sch.id",
       instagram: "bagus_arief",
-      imageUrl: "https://picsum.photos/seed/bagus/400/500"
+      imageUrl: "/team/bagus.jpg"
     },
     {
       name: "Rafa Alfarizky",
       role: "Technical Lead",
       email: "rafaalfarizky@smkwikrama.sch.id",
       instagram: "rafa_alfa",
-      imageUrl: "https://picsum.photos/seed/rafa/400/500"
+      imageUrl: "/team/rafa.jpg"
     }
   ];
 
