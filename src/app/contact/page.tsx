@@ -5,7 +5,7 @@ import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { Mail, Instagram, User } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 
 export default function ContactPage() {
@@ -15,23 +15,19 @@ export default function ContactPage() {
       id: "12511245",
       role: "Lead Strategist",
       email: "naraandratyaga@smkwikrama.sch.id",
-      instagram: "andra_tyg",
-      // Instruksi: Taruh file foto Anda di: public/team/nara.jpg
-      imageUrl: "/team/nara.jpg"
+      instagram: "andra_tyg"
     },
     {
       name: "Bagus Arief I.",
       role: "Creative Director",
       email: "bagusariefishakyudin@smkwikrama.sch.id",
-      instagram: "bagus_arief",
-      imageUrl: "/team/bagus.jpg"
+      instagram: "bagus_arief"
     },
     {
       name: "Rafa Alfarizky",
       role: "Technical Lead",
       email: "rafaalfarizky@smkwikrama.sch.id",
-      instagram: "rafa_alfa",
-      imageUrl: "/team/rafa.jpg"
+      instagram: "rafa_alfa"
     }
   ];
 
@@ -52,13 +48,8 @@ export default function ContactPage() {
               <Card key={i} className="border-none shadow-xl rounded-[2.5rem] bg-card overflow-hidden hover:shadow-2xl transition-all duration-300">
                 <CardHeader className="text-center pt-10 pb-4">
                   <div className="flex justify-center mb-4">
-                    <Avatar className="h-32 w-32 border-4 border-primary/10 rounded-2xl">
-                      <AvatarImage 
-                        src={member.imageUrl} 
-                        alt={member.name} 
-                        className="object-cover"
-                      />
-                      <AvatarFallback><User /></AvatarFallback>
+                    <Avatar className="h-24 w-24 border-4 border-primary/10 rounded-2xl bg-primary/5">
+                      <AvatarFallback className="bg-transparent"><User className="h-10 w-10 text-primary" /></AvatarFallback>
                     </Avatar>
                   </div>
                   <CardTitle className="text-xl font-bold font-headline">{member.name}</CardTitle>
