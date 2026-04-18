@@ -27,14 +27,14 @@ export function Hero() {
       {/* Content */}
       <div className="container relative z-10 px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold font-headline mb-6 tracking-tight animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          Wawasan Luas, <span className="text-primary">Masa Depan Cerah.</span>
+          Dampak IPTEK <span className="text-primary">Masa Kolonial Belanda</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200">
-          Platform pembelajaran interaktif yang dirancang untuk membantu Anda menguasai keahlian baru dengan cara yang menyenangkan dan sistematis.
+          Menelusuri jejak perkembangan Ilmu Pengetahuan dan Teknologi yang meletakkan batu pertama bagi kemajuan infrastruktur modern di Nusantara.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-16 duration-1000 delay-300">
           <Button size="lg" className="h-14 px-8 text-lg font-semibold rounded-full bg-primary hover:scale-105 transition-transform" asChild>
-            <a href="#materi">Mulai Belajar</a>
+            <a href="#materi">Pelajari Materi</a>
           </Button>
         </div>
       </div>
