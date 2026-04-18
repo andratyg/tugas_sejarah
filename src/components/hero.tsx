@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from 'next/image';
@@ -11,7 +10,6 @@ export function Hero() {
 
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-      {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <Image
           src={heroImg.imageUrl}
@@ -24,13 +22,12 @@ export function Hero() {
         <div className="absolute inset-0 bg-background/60 dark:bg-background/80 backdrop-blur-[2px]" />
       </div>
 
-      {/* Content */}
       <div className="container relative z-10 px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-bold font-headline mb-6 tracking-tight animate-in fade-in slide-in-from-bottom-8 duration-1000">
           Dampak IPTEK <span className="text-primary">Masa Kolonial Belanda</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200">
-          Menelusuri jejak perkembangan Ilmu Pengetahuan dan Teknologi yang meletakkan batu pertama bagi kemajuan infrastruktur modern di Nusantara.
+          Eksplorasi perkembangan Ilmu Pengetahuan dan Teknologi yang membentuk fondasi modernitas infrastruktur dan pendidikan teknik di Indonesia.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-16 duration-1000 delay-300">
           <Button size="lg" className="h-14 px-8 text-lg font-semibold rounded-full bg-primary hover:scale-105 transition-transform" asChild>
@@ -39,7 +36,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer z-10">
         <a href="#materi" aria-label="Scroll to content">
           <ArrowDown className="h-8 w-8 text-primary" />

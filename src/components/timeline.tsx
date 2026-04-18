@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from 'react';
@@ -16,7 +15,7 @@ const MATERIALS = [
     points: ['Teknologi Mesin Uap', 'Pembangunan Jalur Rel', 'Jembatan Konstruksi Besi', 'Logistik Massal Efisien'],
     references: [
       { name: 'Heritage KAI', url: 'https://heritage.kai.id' },
-      { name: 'Sejarah Perkeretaapian', url: 'https://id.wikipedia.org/wiki/Sejarah_perkeretaapian_di_Indonesia' }
+      { name: 'Sejarah Kereta Api (Wikipedia)', url: 'https://id.wikipedia.org/wiki/Sejarah_perkeretaapian_di_Indonesia' }
     ]
   },
   {
@@ -27,8 +26,8 @@ const MATERIALS = [
     image: PlaceHolderImages.find(img => img.id === 'material-2')!.imageUrl,
     points: ['Prinsip Elektromagnetik', 'Kode Morse', 'Jaringan Kabel Tembaga', 'Transmisi Data Instan'],
     references: [
-      { name: 'Sejarah Telegraf', url: 'https://id.wikipedia.org/wiki/Telegraf' },
-      { name: 'Museum Pos Indonesia', url: 'https://posindonesia.co.id' }
+      { name: 'Sejarah Telegraf (Wikipedia)', url: 'https://id.wikipedia.org/wiki/Telegraf' },
+      { name: 'Pos Indonesia', url: 'https://www.posindonesia.co.id' }
     ]
   },
   {
@@ -39,8 +38,8 @@ const MATERIALS = [
     image: PlaceHolderImages.find(img => img.id === 'material-6')!.imageUrl,
     points: ['Aklimatisasi Tanaman', 'Riset Taksonomi', 'Pengenalan Kina & Sawit', 'Dokumentasi Flora Tropis'],
     references: [
-      { name: 'Kebun Raya Bogor', url: 'https://kebunraya.id/bogor' },
-      { name: 'Sejarah Botani Indonesia', url: 'https://id.wikipedia.org/wiki/Kebun_Raya_Bogor' }
+      { name: 'Kebun Raya Bogor', url: 'https://kebunraya.id' },
+      { name: 'BRIN (Kebun Raya)', url: 'https://pusatriset.brin.go.id' }
     ]
   },
   {
@@ -51,8 +50,8 @@ const MATERIALS = [
     image: PlaceHolderImages.find(img => img.id === 'material-4')!.imageUrl,
     points: ['Eksperimen Laboratoris', 'Penemuan Vitamin B1', 'Etiologi Penyakit Beri-beri', 'Riset Gizi Global'],
     references: [
-      { name: 'Lembaga Eijkman', url: 'https://www.eijkman.go.id' },
-      { name: 'Nobel Prize Eijkman', url: 'https://www.nobelprize.org/prizes/medicine/1929/summary/' }
+      { name: 'Nobel Prize Eijkman', url: 'https://www.nobelprize.org/prizes/medicine/1929/summary/' },
+      { name: 'Lembaga Eijkman (Wikipedia)', url: 'https://id.wikipedia.org/wiki/Lembaga_Eijkman' }
     ]
   },
   {
@@ -63,8 +62,8 @@ const MATERIALS = [
     image: PlaceHolderImages.find(img => img.id === 'material-3')!.imageUrl,
     points: ['Kurikulum Teknik Eropa', 'Matematika Terapan', 'Pendidikan Insinyur Lokal', 'Fondasi ITB'],
     references: [
-      { name: 'Sejarah ITB', url: 'https://itb.ac.id/sejarah' },
-      { name: 'Pendidikan Teknik Kolonial', url: 'https://id.wikipedia.org/wiki/Institut_Teknologi_Bandung' }
+      { name: 'Sejarah ITB', url: 'https://www.itb.ac.id/sejarah' },
+      { name: 'Delft University History', url: 'https://www.tudelft.nl/en/about-tu-delft/history' }
     ]
   },
   {
@@ -76,18 +75,18 @@ const MATERIALS = [
     points: ['Astrofisika Modern', 'Teleskop Zeiss', 'Observasi Langit Selatan', 'Penelitian Bintang Ganda'],
     references: [
       { name: 'Observatorium Bosscha', url: 'https://bosscha.itb.ac.id' },
-      { name: 'Astronomi di Indonesia', url: 'https://id.wikipedia.org/wiki/Observatorium_Bosscha' }
+      { name: 'Bosscha (Wikipedia)', url: 'https://id.wikipedia.org/wiki/Observatorium_Bosscha' }
     ]
   },
   {
     id: 'm7',
-    title: 'Elektrifikasi: ANIEM & OGEM (1897)',
+    title: 'Elektrifikasi: Jaringan Listrik (1897)',
     description: 'Pembangunan jaringan listrik dan pembangkit listrik tenaga air.',
     fullContent: 'Modernisasi kota-kota besar ditandai dengan pendirian perusahaan listrik seperti ANIEM. Pembangkit Listrik Tenaga Air (PLTA) mulai dibangun untuk menyuplai energi ke pabrik dan pemukiman.\n\nTeknologi distribusi listrik ini membawa perubahan besar pada gaya hidup perkotaan, termasuk lampu jalan elektrik dan penggunaan motor listrik dalam industri manufaktur, mengakhiri era lampu gas di kota-kota kolonial.',
     image: PlaceHolderImages.find(img => img.id === 'material-8')!.imageUrl,
     points: ['Pembangkit Listrik (PLTA)', 'Jaringan Distribusi Kota', 'Industrialisasi Elektrik', 'Lampu Jalan Modern'],
     references: [
-      { name: 'Sejarah Listrik Indonesia', url: 'https://pln.co.id/sejarah' },
+      { name: 'Sejarah Listrik (PLN)', url: 'https://web.pln.co.id/tentang-kami/sejarah-pt-pln-persero' },
       { name: 'Modernisasi Kolonial', url: 'https://id.wikipedia.org/wiki/Perusahaan_Listrik_Negara' }
     ]
   },
@@ -99,31 +98,31 @@ const MATERIALS = [
     image: PlaceHolderImages.find(img => img.id === 'material-5')!.imageUrl,
     points: ['Pintu Air Mekanis', 'Manajemen Debit Air', 'Bendungan Beton Sipil', 'Irigasi Teknis Modern'],
     references: [
-      { name: 'Sejarah Pengairan', url: 'https://sda.pu.go.id' },
-      { name: 'Teknik Sipil Air', url: 'https://id.wikipedia.org/wiki/Irigasi' }
+      { name: 'Direktorat SDA', url: 'https://sda.pu.go.id' },
+      { name: 'Irigasi (Wikipedia)', url: 'https://id.wikipedia.org/wiki/Irigasi' }
     ]
   },
   {
     id: 'm9',
     title: 'Teknologi Dirgantara: KNILM (1928)',
-    description: 'Lahirnya penerbangan sipil dan pengiriman pos udara lintas benua.',
-    fullContent: 'K Koninklijke Nederlandsch-Indische Luchtvaart Maatschappij (KNILM) memperkenalkan transportasi udara komersial di Nusantara. Bandara Kemayoran menjadi pusat hub internasional.\n\nTeknologi penerbangan ini memperpendek waktu tempuh antar pulau secara drastis. Penggunaan pesawat seperti Fokker dan Douglas dalam pengiriman pos udara (Airmail) mengintegrasikan Indonesia ke dalam jaringan logistik global di awal abad ke-20.',
+    description: 'Lahirnya penerbangan sipil dan pengiriman pos udara.',
+    fullContent: 'KNILM memperkenalkan transportasi udara komersial di Nusantara. Bandara Kemayoran menjadi pusat hub internasional.\n\nTeknologi penerbangan ini memperpendek waktu tempuh antar pulau secara drastis. Penggunaan pesawat seperti Fokker dan Douglas dalam pengiriman pos udara mengintegrasikan Indonesia ke dalam jaringan logistik global di awal abad ke-20.',
     image: PlaceHolderImages.find(img => img.id === 'material-9')!.imageUrl,
-    points: ['Penerbangan Komersial', 'Bandara Internasional', 'Teknologi Fokker/Douglas', 'Logistik Pos Udara'],
+    points: ['Penerbangan Komersial', 'Bandara Internasional', 'Teknologi Fokker', 'Logistik Pos Udara'],
     references: [
-      { name: 'Sejarah Penerbangan', url: 'https://id.wikipedia.org/wiki/KNILM' },
-      { name: 'Arsip Dirgantara', url: 'https://kemenhub.go.id' }
+      { name: 'Sejarah Penerbangan (Kemkes)', url: 'https://hubud.dephub.go.id' },
+      { name: 'KNILM (Wikipedia)', url: 'https://id.wikipedia.org/wiki/KNILM' }
     ]
   },
   {
     id: 'm10',
     title: 'Geologi: Industri Pertambangan (1885)',
     description: 'Eksplorasi sumber daya bumi dan teknologi pengeboran minyak.',
-    fullContent: 'Penemuan minyak di Pangkalan Brandan oleh J.B. August Kessler memicu revolusi industri ekstraktif. Teknologi pengeboran dalam dan penyulingan minyak (kilang) diperkenalkan untuk pertama kalinya.\n\nPerkembangan geologi terapan ini melahirkan Royal Dutch Shell. Teknik pemetaan geologi yang dilakukan saat itu masih menjadi referensi utama bagi industri migas dan pertambangan batubara modern di Indonesia.',
+    fullContent: 'Penemuan minyak di Pangkalan Brandan memicu revolusi industri ekstraktif. Teknologi pengeboran dalam dan penyulingan minyak diperkenalkan untuk pertama kalinya.\n\nPerkembangan geologi terapan ini melahirkan Royal Dutch Shell. Teknik pemetaan geologi yang dilakukan saat itu masih menjadi referensi utama bagi industri migas modern di Indonesia.',
     image: PlaceHolderImages.find(img => img.id === 'material-10')!.imageUrl,
     points: ['Pengeboran Minyak Bumi', 'Kilang Penyulingan', 'Pemetaan Geologi', 'Industri Ekstraktif'],
     references: [
-      { name: 'Sejarah Migas', url: 'https://migas.esdm.go.id' },
+      { name: 'Sejarah Migas (ESDM)', url: 'https://migas.esdm.go.id' },
       { name: 'Sejarah Shell', url: 'https://www.shell.co.id/id_id/about-us/who-we-are/our-history.html' }
     ]
   },
@@ -131,24 +130,24 @@ const MATERIALS = [
     id: 'm11',
     title: 'Arsitektur Nieuwe Bouwen (1920-an)',
     description: 'Rekayasa bangunan tropis modern berbasis beton dan sirkulasi udara.',
-    fullContent: 'Arsitek kolonial seperti Wolff Schoemaker memperkenalkan gaya Nieuwe Bouwen yang mengutamakan fungsi dan adaptasi iklim. Teknologi beton bertulang memungkinkan struktur bangunan yang lebih kokoh dan luas.\n\nInovasi pada ventilasi alami, dinding ganda, dan atap tinggi dirancang secara teknis untuk mendinginkan ruangan tanpa AC. Gedung Sate di Bandung adalah salah satu contoh puncak rekayasa arsitektur tropis modern pada masa itu.',
+    fullContent: 'Arsitek kolonial memperkenalkan gaya Nieuwe Bouwen yang mengutamakan fungsi dan adaptasi iklim. Teknologi beton bertulang memungkinkan struktur bangunan yang lebih kokoh dan luas.\n\nInovasi pada ventilasi alami dan dinding ganda dirancang secara teknis untuk mendinginkan ruangan tanpa AC. Gedung Sate adalah contoh puncak rekayasa arsitektur tropis pada masa itu.',
     image: PlaceHolderImages.find(img => img.id === 'material-11')!.imageUrl,
     points: ['Beton Bertulang', 'Adaptasi Iklim Tropis', 'Sirkulasi Udara Alami', 'Gaya Arsitektur Modern'],
     references: [
-      { name: 'Arsitektur Kolonial', url: 'https://id.wikipedia.org/wiki/Arsitektur_kolonial_Belanda_di_Indonesia' },
-      { name: 'Sejarah Gedung Sate', url: 'https://jabarprov.go.id' }
+      { name: 'Sejarah Gedung Sate', url: 'https://jabarprov.go.id' },
+      { name: 'Arsitektur Kolonial (Wikipedia)', url: 'https://id.wikipedia.org/wiki/Arsitektur_kolonial_Belanda_di_Indonesia' }
     ]
   },
   {
     id: 'm12',
     title: 'Mekanisasi Pabrik Gula (Abad 19)',
     description: 'Transmisi tenaga uap ke mesin penggiling tebu industri.',
-    fullContent: 'Hingga akhir masa penjajahan, industri gula di Jawa adalah salah satu yang tercanggih di dunia. Pengalihan dari tenaga hewan ke mesin giling uap meningkatkan kapasitas produksi secara eksponensial.\n\nTeknologi vakum dalam proses kristalisasi gula diperkenalkan untuk efisiensi bahan bakar. Pabrik-pabrik gula ini menjadi pusat mekanisasi pertama di pedesaan Jawa, memperkenalkan konsep *assembly line* dan manajemen pabrik modern bagi masyarakat lokal.',
+    fullContent: 'Industri gula di Jawa pernah menjadi yang tercanggih di dunia. Pengalihan dari tenaga hewan ke mesin giling uap meningkatkan kapasitas produksi secara eksponensial.\n\nTeknologi vakum dalam proses kristalisasi gula diperkenalkan untuk efisiensi. Pabrik-pabrik ini menjadi pusat mekanisasi pertama di pedesaan Jawa, memperkenalkan konsep manajemen pabrik modern bagi masyarakat lokal.',
     image: PlaceHolderImages.find(img => img.id === 'material-12')!.imageUrl,
-    points: ['Mesin Giling Uap', 'Proses Kristalisasi Vakum', 'Mekanisasi Industri', 'Manajemen Pabrik'],
+    points: ['Mesin Giling Uap', 'Kristalisasi Vakum', 'Mekanisasi Industri', 'Manajemen Pabrik'],
     references: [
-      { name: 'Industri Gula Jawa', url: 'https://id.wikipedia.org/wiki/Industri_gula_di_Indonesia' },
-      { name: 'Sejarah Gula Kolonial', url: 'https://historia.id' }
+      { name: 'Industri Gula (Historia)', url: 'https://historia.id' },
+      { name: 'Pabrik Gula (Wikipedia)', url: 'https://id.wikipedia.org/wiki/Industri_gula_di_Indonesia' }
     ]
   }
 ];
@@ -162,12 +161,11 @@ export function Timeline() {
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold font-headline mb-4 text-primary">Dampak IPTEK Masa Kolonial Belanda</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Kurikulum lengkap perkembangan Ilmu Pengetahuan dan Teknologi dari awal industrialisasi hingga berakhirnya masa kolonial di Indonesia.
+            Analisis mendalam mengenai perkembangan Ilmu Pengetahuan dan Teknologi dari awal industrialisasi hingga berakhirnya masa kolonial di Nusantara.
           </p>
         </div>
 
         <div className="relative max-w-5xl mx-auto">
-          {/* Timeline Vertical Line */}
           <div className="timeline-line hidden md:block" />
 
           <div className="space-y-12">

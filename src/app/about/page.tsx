@@ -1,14 +1,14 @@
-
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { CheckCircle2 } from 'lucide-react';
 
 export default function AboutPage() {
   const points = [
-    "Analisis mendalam transformasi infrastruktur mesin uap dan rel.",
-    "Peran standar pendidikan teknik Belanda dalam pembentukan ITB.",
-    "Sejarah riset kedokteran tropis dan penemuan vitamin B1.",
-    "Manajemen sumber daya air melalui sistem irigasi teknis modern.",
+    "Transformasi infrastruktur transportasi berbasis mesin uap.",
+    "Pembentukan standar pendidikan tinggi teknik (Technische Hoogeschool).",
+    "Riset kedokteran tropis dan penemuan vitamin molekuler.",
+    "Manajemen sumber daya air melalui hidrolika sipil modern.",
+    "Eksplorasi geologi dan teknologi pengeboran industri ekstraktif."
   ];
 
   return (
@@ -17,16 +17,16 @@ export default function AboutPage() {
       <main className="flex-grow pt-32 pb-24">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-8 text-primary">Tentang Analisis IPTEK Kolonial</h1>
+            <h1 className="text-4xl md:text-5xl font-bold font-headline mb-8 text-primary">Tentang Kajian IPTEK Kolonial</h1>
             
             <div className="prose dark:prose-invert max-w-none space-y-6 text-muted-foreground leading-relaxed">
               <p className="text-lg">
-                Proyek ini bertujuan untuk mengedukasi masyarakat mengenai bagaimana Ilmu Pengetahuan dan Teknologi pada masa kolonial Belanda menjadi landasan bagi modernitas fisik dan institusi pendidikan teknik di Indonesia saat ini.
+                Platform ini bertujuan untuk menganalisis bagaimana Ilmu Pengetahuan dan Teknologi pada masa kolonial Belanda meletakkan fondasi bagi modernitas fisik dan institusi pendidikan teknik di Indonesia saat ini.
               </p>
               
-              <h2 className="text-2xl font-bold text-foreground mt-12 mb-4">Fokus Kajian</h2>
+              <h2 className="text-2xl font-bold text-foreground mt-12 mb-4">Fokus Analisis</h2>
               <p>
-                Kami menelaah berbagai disiplin ilmu mulai dari teknik sipil, kelistrikan, telekomunikasi, hingga biologi molekuler yang berkembang antara abad ke-19 hingga pertengahan abad ke-20 di Indonesia.
+                Kami menelaah berbagai disiplin ilmu mulai dari teknik sipil, kelistrikan, telekomunikasi, hingga biologi molekuler yang berkembang antara abad ke-19 hingga pertengahan abad ke-20.
               </p>
 
               <div className="bg-primary/5 p-8 rounded-3xl border border-primary/20 my-12">
@@ -43,7 +43,7 @@ export default function AboutPage() {
 
               <h2 className="text-2xl font-bold text-foreground mt-12 mb-4">Metodologi Historis</h2>
               <p>
-                Setiap materi disusun berdasarkan fakta sejarah yang diverifikasi melalui arsip nasional dan dokumentasi lembaga terkait (seperti KAI, ITB, dan Lembaga Eijkman) untuk memberikan pemahaman yang akurat mengenai perkembangan teknologi masa lalu.
+                Setiap materi disusun berdasarkan data sejarah yang diverifikasi melalui dokumentasi lembaga terkait (KAI, ITB, BRIN, dan Lembaga Eijkman) untuk memberikan pemahaman yang akurat mengenai perkembangan teknologi masa lalu.
               </p>
             </div>
           </div>
