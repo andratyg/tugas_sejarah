@@ -27,7 +27,7 @@ export default function ContactPage() {
       name: "Rafa Alfarizky",
       role: "",
       email: "rafaalfarizky@smkwikrama.sch.id",
-      instagram: "rafa_alfa"
+      instagram: "rafa_all"
     }
   ];
 
