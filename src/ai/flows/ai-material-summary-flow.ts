@@ -33,10 +33,10 @@ export async function generateMaterialSummary(input: MaterialSummaryInput): Prom
 }
 
 // Defines the prompt for generating material summaries.
-// Using 'googleai/gemini-1.5-flash' which is the standard model identifier for Genkit 1.x
+// Using 'gemini-1.5-flash' which is the standard identifier.
 const materialSummaryPrompt = ai.definePrompt({
   name: 'materialSummaryPrompt',
-  model: 'googleai/gemini-1.5-flash',
+  model: 'gemini-1.5-flash',
   input: { schema: MaterialSummaryInputSchema },
   output: { schema: MaterialSummaryOutputSchema },
   prompt: `Tolong berikan ringkasan yang singkat, jelas, dan informatif mengenai materi pembelajaran berikut dalam Bahasa Indonesia.
