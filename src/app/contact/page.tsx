@@ -19,13 +19,14 @@ export default function ContactPage() {
     },
     {
       name: "Bagus Arief I.",
+      id: "12510876",
       role: "Pencari Materi",
       email: "bagusariefishakyudin@smkwikrama.sch.id",
-      instagram: "bagus_arief"
+      instagram: "vipionn"
     },
     {
       name: "Rafa Alfarizky",
-      role: "",
+      role: "Sibuk Main ff Nyari materi langsung dari ai bukan dari pencarian jadi ga dimasukin",
       email: "rafaalfarizky@smkwikrama.sch.id",
       instagram: "rafa_all"
     }

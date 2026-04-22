@@ -36,7 +36,6 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
   const [isLoadingSummary, setIsLoadingSummary] = useState(false);
   const { toast } = useToast();
 
-  // Reset state when material changes or modal is closed
   useEffect(() => {
     setSummary(null);
     setIsLoadingSummary(false);
@@ -64,7 +63,6 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-3xl h-[90vh] p-0 border-none rounded-[2rem] overflow-hidden gap-0 bg-background">
-        {/* Scrollable Container with hidden scrollbar */}
         <div className="h-full overflow-y-auto no-scrollbar">
           <div className="relative h-64 md:h-80 w-full shrink-0">
             <Image
@@ -109,7 +107,6 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
                 </ul>
               </div>
 
-              {/* AI Summary Tool */}
               <div className="bg-primary/5 p-6 md:p-8 rounded-3xl border border-primary/20">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
                   <div className="flex items-center gap-2">

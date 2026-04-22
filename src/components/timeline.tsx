@@ -94,7 +94,7 @@ const MATERIALS = [
     title: 'Mekanisasi Pabrik Gula (Abad 19)',
     description: 'Transmisi tenaga uap ke mesin penggiling tebu industri.',
     fullContent: 'Industri gula di Jawa pernah menjadi yang tercanggih di dunia. Pengalihan dari tenaga hewan ke mesin giling uap meningkatkan kapasitas produksi secara eksponensial.\n\nTeknologi vakum dalam proses kristalisasi gula diperkenalkan untuk efisiensi. Pabrik-pabrik ini menjadi pusat mekanisasi pertama di pedesaan Jawa, memperkenalkan konsep manajemen pabrik modern bagi masyarakat lokal.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sugar_factory_Tjomal_Java.jpg/1280px-Sugar_factory_Tjomal_Java.jpg',
+    image: 'https://asset.kompas.com/crops/Cj6cdIIe0RmPRvrNLCnyRmiq6vs=/27x51:978x685/1200x800/data/photo/2018/12/09/2134982983.jpeg',
     points: ['Mesin Giling Uap', 'Kristalisasi Vakum', 'Mekanisasi Industri', 'Manajemen Pabrik'],
     references: [
       { name: 'Industri Gula (Historia)', url: 'https://historia.id' },
