@@ -19,12 +19,12 @@ export type MaterialSummaryInput = z.infer<typeof MaterialSummaryInputSchema>;
 
 // Output Schema for the material summary flow.
 const MaterialSummaryOutputSchema = z.object({
-  summary: z.string().describe('A concise AI-generated summary of the learning material, highlighting key points.'),
+  summary: z.string().describe('A concise AI-generated summary of the learning material in Indonesian, highlighting key points.'),
 });
 export type MaterialSummaryOutput = z.infer<typeof MaterialSummaryOutputSchema>;
 
 /**
- * Generates a concise AI-powered summary of the provided learning material.
+ * Generates a concise AI-powered summary of the provided learning material in Indonesian.
  * @param input - The input containing the material content.
  * @returns A promise that resolves to the generated summary.
  */
@@ -37,11 +37,11 @@ const materialSummaryPrompt = ai.definePrompt({
   name: 'materialSummaryPrompt',
   input: { schema: MaterialSummaryInputSchema },
   output: { schema: MaterialSummaryOutputSchema },
-  prompt: `Please provide a concise and clear summary of the following learning material.
-Focus on extracting the most important key points and concepts.
-The summary should be easy to understand and suitable for quick comprehension.
+  prompt: `Tolong berikan ringkasan yang singkat, jelas, dan informatif mengenai materi pembelajaran berikut dalam Bahasa Indonesia.
+Fokus pada poin-poin kunci dan konsep sejarah IPTEK yang paling penting.
+Ringkasan harus mudah dipahami dan cocok untuk pemahaman cepat bagi pelajar.
 
-Learning Material:
+Materi Pembelajaran:
 {{{materialContent}}}`,
 });
 
@@ -55,7 +55,7 @@ const materialSummaryFlow = ai.defineFlow(
   async (input) => {
     const { output } = await materialSummaryPrompt(input);
     if (!output) {
-      throw new Error('Failed to generate summary.');
+      throw new Error('Gagal menghasilkan ringkasan.');
     }
     return output;
   }

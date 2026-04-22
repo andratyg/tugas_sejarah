@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -72,7 +71,7 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
               src={material.image}
               alt={material.title}
               fill
-              sizes="100vw"
+              sizes="(max-width: 1200px) 100vw, 800px"
               className="object-cover"
               priority
               unoptimized
@@ -115,7 +114,7 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
                   <div className="flex items-center gap-2">
                     <Sparkles className="h-6 w-6 text-primary" />
-                    <h4 className="text-xl font-bold text-foreground">Ringkasan AI</h4>
+                    <h4 className="text-xl font-bold text-foreground">Ringkasan AI (Bahasa Indonesia)</h4>
                   </div>
                   {!summary && (
                     <Button
