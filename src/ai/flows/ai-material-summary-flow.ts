@@ -35,6 +35,7 @@ export async function generateMaterialSummary(input: MaterialSummaryInput): Prom
 // Defines the prompt for generating material summaries.
 const materialSummaryPrompt = ai.definePrompt({
   name: 'materialSummaryPrompt',
+  model: 'googleai/gemini-1.5-flash',
   input: { schema: MaterialSummaryInputSchema },
   output: { schema: MaterialSummaryOutputSchema },
   prompt: `Tolong berikan ringkasan yang singkat, jelas, dan informatif mengenai materi pembelajaran berikut dalam Bahasa Indonesia.
