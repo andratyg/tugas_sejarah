@@ -1,3 +1,4 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -13,6 +14,10 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: '**', // Mengizinkan semua domain untuk mempermudah pemasangan link gambar eksternal
+      },
+      {
+        protocol: 'http',
+        hostname: '**', // Mengizinkan semua domain http
       },
     ],
   },
