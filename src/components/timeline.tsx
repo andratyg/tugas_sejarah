@@ -82,7 +82,7 @@ const MATERIALS = [
     id: 'm7',
     title: 'Elektrifikasi: Jaringan Listrik (1897)',
     description: 'Pembangunan jaringan listrik dan pembangkit listrik tenaga air.',
-    fullContent: 'Modernisasi kota-kota besar ditandai dengan pendirian perusahaan listrik seperti ANIEM. Pembangkit Listrik Tenaga Air (PLTA) mulai dibangun untuk menyuplai energi ke pabrik dan pemukiman.\n\nTeknologi distribusi listrik ini membawa perubahan besar pada gaya hidup perkotaan, termasuk lampu jalan elektrik dan penggunaan motor listrik dalam industri manufaktur, mengakhiri era lampu gas di kota-kota kolonial.',
+    fullContent: 'Modernisasi kota-kota besar ditandai dengan pendirian perusahaan listrik seperti ANIEM. Pembangkit Listrik Tenaga Air (PLTA) mulai dibangun untuk menyuplai energi ke pabrik dan pemukiman.\n\nTeknologi distribusi listrik ini membawa perubahan besar pada gaya hidup perkotaan, termasuk lampu jalan elektrik and penggunaan motor listrik dalam industri manufaktur, mengakhiri era lampu gas di kota-kota kolonial.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Trempealeau-Electric-Cooperative-Arcadia-Wis.jpg',
     points: ['Pembangkit Listrik (PLTA)', 'Jaringan Distribusi Kota', 'Industrialisasi Elektrik', 'Lampu Jalan Modern'],
     references: [

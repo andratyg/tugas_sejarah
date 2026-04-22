@@ -62,6 +62,7 @@ export function MaterialCard({ title, description, image, side, onClick }: Mater
             src={image}
             alt={title}
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500" />

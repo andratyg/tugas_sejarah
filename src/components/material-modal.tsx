@@ -72,6 +72,7 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
               src={material.image}
               alt={material.title}
               fill
+              sizes="100vw"
               className="object-cover"
               priority
               unoptimized
