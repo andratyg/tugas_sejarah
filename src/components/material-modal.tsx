@@ -54,7 +54,7 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
       toast({
         variant: "destructive",
         title: "Gagal Meringkas",
-        description: "Terjadi kesalahan saat menghubungi AI. Silakan coba lagi nanti.",
+        description: "AI sedang sibuk atau tidak tersedia. Silakan coba lagi beberapa saat lagi.",
       });
     } finally {
       setIsLoadingSummary(false);
