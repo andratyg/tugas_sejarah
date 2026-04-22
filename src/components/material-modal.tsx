@@ -14,6 +14,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { generateMaterialSummary } from '@/ai/flows/ai-material-summary-flow';
 import { Separator } from '@/components/ui/separator';
+import { useToast } from '@/hooks/use-toast';
 
 interface Material {
   id: string;
@@ -34,6 +35,7 @@ interface MaterialModalProps {
 export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps) {
   const [summary, setSummary] = useState<string | null>(null);
   const [isLoadingSummary, setIsLoadingSummary] = useState(false);
+  const { toast } = useToast();
 
   // Reset state when material changes or modal is closed
   useEffect(() => {
@@ -50,6 +52,11 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
       setSummary(result.summary);
     } catch (error) {
       console.error("Failed to generate summary", error);
+      toast({
+        variant: "destructive",
+        title: "Gagal Meringkas",
+        description: "Terjadi kesalahan saat menghubungi AI. Silakan coba lagi nanti.",
+      });
     } finally {
       setIsLoadingSummary(false);
     }
@@ -67,6 +74,7 @@ export function MaterialModal({ material, isOpen, onClose }: MaterialModalProps)
               fill
               className="object-cover"
               priority
+              unoptimized
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
           </div>
