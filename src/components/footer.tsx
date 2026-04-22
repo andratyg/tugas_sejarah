@@ -22,7 +22,7 @@ export function Footer() {
           {/* Bottom Copyright Section with visible border */}
           <div className="pt-16 border-t border-primary/30">
             <p className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground font-semibold">
-              © 2026 Seluruh Hak Cipta Dilindungi.
+              © 2026 SMK WIKRAMA.
             </p>
           </div>
         </div>
