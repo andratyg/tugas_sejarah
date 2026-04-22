@@ -15,7 +15,7 @@ export function Footer() {
           {/* Historical Narrative - Only Quote */}
           <div className="space-y-8">
             <p className="text-2xl md:text-3xl font-headline font-medium text-foreground leading-tight italic max-w-2xl mx-auto">
-              "Bangsa yang besar adalah bangsa yang tidak pernah melupakan sejarahnya."
+             "Orang boleh pandai setinggi langit, tapi selama ia tidak menulis, ia akan hilang di dalam masyarakat dan dari sejarah." — Pramoedya Ananta Toer
             </p>
           </div>
 
