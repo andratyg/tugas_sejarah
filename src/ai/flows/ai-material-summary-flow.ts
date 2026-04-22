@@ -33,10 +33,10 @@ export async function generateMaterialSummary(input: MaterialSummaryInput): Prom
 }
 
 // Defines the prompt for generating material summaries.
-// Using 'gemini-1.5-flash' which is the standard identifier.
+// Using 'gemini-1.0-pro' which is the standard identifier.
 const materialSummaryPrompt = ai.definePrompt({
   name: 'materialSummaryPrompt',
-  model: 'gemini-1.5-flash',
+  model: 'gemini-1.0-pro',
   input: { schema: MaterialSummaryInputSchema },
   output: { schema: MaterialSummaryOutputSchema },
   prompt: `Tolong berikan ringkasan yang singkat, jelas, dan informatif mengenai materi pembelajaran berikut dalam Bahasa Indonesia.
@@ -55,10 +55,16 @@ const materialSummaryFlow = ai.defineFlow(
     outputSchema: MaterialSummaryOutputSchema,
   },
   async (input) => {
-    const { output } = await materialSummaryPrompt(input);
-    if (!output) {
-      throw new Error('Gagal menghasilkan ringkasan.');
-    }
-    return output;
+    // Ganti API: Temporarily using a simple substring as the AI API is not working.
+    // This will prevent the app from crashing and provide a temporary summary.
+    const summary = input.materialContent.substring(0, 250) + '... (Ringkasan otomatis sedang dalam perbaikan, ini adalah ringkasan sementara).';
+    return { summary };
+    
+    // The original code that was failing is commented out below.
+    // const { output } = await materialSummaryPrompt(input);
+    // if (!output) {
+    //   throw new Error('Gagal menghasilkan ringkasan.');
+    // }
+    // return output;
   }
 );
