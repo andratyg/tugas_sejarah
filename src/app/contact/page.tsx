@@ -26,7 +26,7 @@ export default function ContactPage() {
     },
     {
       name: "Rafa Alfarizky",
-      role: "Sibuk Main ff Nyari materi langsung dari ai bukan dari pencarian jadi ga dimasukin",
+      role: "---------------------------------------",
       email: "rafaalfarizky@smkwikrama.sch.id",
       instagram: "rafa_all"
     }
