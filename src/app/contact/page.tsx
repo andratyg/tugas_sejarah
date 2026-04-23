@@ -26,7 +26,7 @@ export default function ContactPage() {
     },
     {
       name: "Rafa Alfarizky",
-      role: "---------------------------------------",
+      role: "Menjelaskan Website/materi",
       email: "rafaalfarizky@smkwikrama.sch.id",
       instagram: "rafa_all"
     }
